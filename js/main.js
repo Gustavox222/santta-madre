@@ -63,6 +63,7 @@
     $('.sr', toggle).textContent = open ? 'Fechar menu' : 'Abrir menu';
     menu.hidden = !open;
     document.body.style.overflow = open ? 'hidden' : '';
+    document.documentElement.classList.toggle('menu-open', open);
     if (open && M && !reduce) M.animate($$('a', menu), { opacity: [0, 1], y: [16, 0] }, { delay: M.stagger(0.05), duration: 0.4 });
   }
   if (toggle) toggle.addEventListener('click', function () { setMenu(toggle.getAttribute('aria-expanded') !== 'true'); });

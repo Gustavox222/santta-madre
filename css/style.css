@@ -97,7 +97,9 @@ button { font: inherit; color: inherit; }
 .nav__toggle i:nth-of-type(2) { top: 27px; }
 .nav__toggle[aria-expanded="true"] i:nth-of-type(1) { transform: translateY(4px) rotate(45deg); }
 .nav__toggle[aria-expanded="true"] i:nth-of-type(2) { transform: translateY(-4px) rotate(-45deg); }
-.menu { position: fixed; inset: var(--nav-h) 0 0; background: var(--black); z-index: 49; }
+.menu { position: fixed; inset: var(--nav-h) 0 0; background: var(--black); z-index: 49; overflow-y: auto; overscroll-behavior: contain; }
+.menu[hidden] { display: none; }
+html.menu-open .nav { background: var(--black); border-color: var(--line); }
 .menu__in { display: flex; flex-direction: column; gap: 6px; padding-block: 24px; }
 .menu__in a:not(.btn) { font: 400 34px/1.15 var(--f-display); text-transform: uppercase; text-decoration: none; padding: 8px 0; border-bottom: 1px solid var(--line); }
 .menu__in .btn { margin-top: 20px; }

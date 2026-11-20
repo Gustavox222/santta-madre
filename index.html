@@ -73,17 +73,19 @@
       <span class="sr">Abrir menu</span><i></i><i></i>
     </button>
   </div>
-  <div class="menu" id="menu" data-menu hidden>
-    <nav class="wrap menu__in" aria-label="Menu">
-      <a href="#servicos">Serviços e preços</a>
-      <a href="#espaco">O espaço</a>
-      <a href="#curso">Curso de barbeiro</a>
-      <a href="#avaliacoes">Avaliações</a>
-      <a href="#visite">Como chegar</a>
-      <a class="btn btn--primary" href="https://booksy.com/pt-br/instant-experiences/widget/45769?instant_experiences_enabled=true" target="_blank" rel="noopener" data-booksy>Agendar horário</a>
-    </nav>
-  </div>
 </header>
+<!-- menu fora do header: o blur do header criava um bloco de contenção e o menu fixo ficava com altura 0 depois de rolar -->
+<div class="menu" id="menu" data-menu hidden>
+  <nav class="wrap menu__in" aria-label="Menu">
+    <a href="#servicos">Serviços e preços</a>
+    <a href="#espaco">O espaço</a>
+    <a href="#curso">Curso de barbeiro</a>
+    <a href="#avaliacoes">Avaliações</a>
+    <a href="#visite">Como chegar</a>
+    <a class="btn btn--primary" href="https://booksy.com/pt-br/instant-experiences/widget/45769?instant_experiences_enabled=true" target="_blank" rel="noopener" data-booksy>Agendar horário</a>
+  </nav>
+</div>
+
 
 <main id="conteudo">
 
