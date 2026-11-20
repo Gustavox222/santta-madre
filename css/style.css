@@ -119,7 +119,8 @@ button { font: inherit; color: inherit; }
 .hero__facts { display: flex; flex-wrap: wrap; gap: 14px 34px; margin-top: 38px; padding-top: 26px; border-top: 1px solid var(--line); }
 .hero__facts li { display: flex; align-items: baseline; gap: 8px; font-size: 14px; color: var(--muted-d); }
 .hero__facts strong { font: 400 26px/1 var(--f-display); color: var(--bone); letter-spacing: .02em; }
-.stars { color: #f5b301; letter-spacing: 1px; font-size: 13px; }
+.stars { color: #f5b301; font-size: 13px; display: inline-flex; gap: 1px; align-self: center; }
+.glyph { width: 1em; height: 1em; display: block; flex: none; }
 .hero__media { position: relative; }
 .hero__photo { position: relative; aspect-ratio: 4 / 5; border-radius: var(--r); overflow: hidden; box-shadow: 0 40px 80px -30px rgba(0,0,0,.8), 0 0 0 1px var(--line); }
 .hero__photo img { width: 100%; height: 100%; object-fit: cover; object-position: 46% 50%; transform-origin: 50% 40%; }
@@ -129,9 +130,9 @@ button { font: inherit; color: inherit; }
 .status.is-closed .status__dot { background: var(--red-hi); }
 @keyframes ping { 0% { box-shadow: 0 0 0 0 rgba(54,214,122,.55); } 70%, 100% { box-shadow: 0 0 0 10px rgba(54,214,122,0); } }
 .seal { position: absolute; right: -26px; bottom: -26px; width: 136px; height: 136px; border-radius: 50%; background: var(--red); display: grid; place-items: center; box-shadow: 0 20px 40px -14px rgba(0,0,0,.7); }
-.seal svg { position: absolute; inset: 0; width: 100%; height: 100%; animation: spin 16s linear infinite; }
+.seal > svg { position: absolute; inset: 0; width: 100%; height: 100%; animation: spin 16s linear infinite; }
 .seal text { font: 800 9.6px var(--f-text); fill: #fff; }
-.seal__mark { font-size: 34px; color: #fff; transform: rotate(-45deg); }
+.seal__mark { font-size: 38px; color: #fff; transform: rotate(-45deg); }
 @keyframes spin { to { transform: rotate(360deg); } }
 .pole { position: absolute; left: 0; top: 0; bottom: 0; width: 8px; background: repeating-linear-gradient(-45deg, var(--red) 0 12px, var(--bone) 12px 24px, #1d3d8f 24px 36px, var(--bone) 36px 48px); background-size: 100% 68px; animation: pole 2.6s linear infinite; opacity: .9; }
 @keyframes pole { to { background-position: 0 68px; } }
@@ -139,7 +140,7 @@ button { font: inherit; color: inherit; }
 /* ---------- Faixa ---------- */
 .band { background: var(--red); color: #fff; overflow: hidden; border-block: 1px solid var(--red-deep); }
 .band__track { display: flex; align-items: center; gap: 28px; width: max-content; padding: 20px 0; font: 400 clamp(26px, 3vw, 40px)/1 var(--f-display); text-transform: uppercase; letter-spacing: .03em; will-change: transform; }
-.band__track b { font-weight: 400; font-size: .7em; opacity: .8; }
+.band__track b { display: inline-flex; font-size: .62em; opacity: .85; }
 
 /* ---------- Seções ---------- */
 .sec { position: relative; padding: clamp(80px, 10vw, 140px) 0; }
@@ -216,7 +217,7 @@ button { font: inherit; color: inherit; }
 .score__top { display: flex; align-items: center; gap: 18px; }
 .score__num { font: 400 84px/.85 var(--f-display); color: var(--ink); }
 .score__top p { font-size: 15px; color: var(--muted-l); margin-top: 6px; }
-.stars--big { font-size: 22px; letter-spacing: 2px; }
+.stars--big { font-size: 22px; gap: 3px; }
 .bars { display: grid; gap: 8px; }
 .bars li { display: grid; grid-template-columns: 14px 1fr 34px; align-items: center; gap: 10px; font-size: 14px; font-weight: 700; }
 .bars i { height: 8px; border-radius: 99px; background: rgba(21,17,14,.1); position: relative; overflow: hidden; }
