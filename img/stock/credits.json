@@ -1,0 +1,63 @@
+{
+ "note": "Credits for the photographs in this folder: photos.mjs credits prints the footer block for the ones the pages use.",
+ "photos": [
+  {
+   "file": "photo-f180596011.jpg",
+   "files": [
+    "photo-f180596011-500.jpg",
+    "photo-f180596011-960.jpg",
+    "photo-f180596011.jpg"
+   ],
+   "id": "f180596011",
+   "alt": "Barber tools - Macedonian barber craft",
+   "by": "Orce Wiki",
+   "licence": "CC BY-SA 4.0",
+   "licenceUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+   "page": "https://commons.wikimedia.org/wiki/File:Barber_tools_-_Macedonian_barber_craft.jpg",
+   "source": "Wikimedia Commons"
+  },
+  {
+   "file": "photo-f93810599-960.jpg",
+   "files": [
+    "photo-f93810599-500.jpg",
+    "photo-f93810599-960.jpg"
+   ],
+   "id": "f93810599",
+   "alt": "Charlie Young's Barber Tools",
+   "by": "Mitchel23",
+   "licence": "CC BY-SA 4.0",
+   "licenceUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+   "page": "https://commons.wikimedia.org/wiki/File:Charlie_Young%27s_Barber_Tools.jpg",
+   "source": "Wikimedia Commons"
+  },
+  {
+   "file": "photo-f5776390.jpg",
+   "files": [
+    "photo-f5776390-500.jpg",
+    "photo-f5776390-960.jpg",
+    "photo-f5776390.jpg"
+   ],
+   "id": "f5776390",
+   "alt": "Hair Cutting Scissors",
+   "by": "Stilfehler",
+   "licence": "CC BY-SA 3.0",
+   "licenceUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+   "page": "https://commons.wikimedia.org/wiki/File:Hair_Cutting_Scissors.jpg",
+   "source": "Wikimedia Commons"
+  },
+  {
+   "file": "photo-f23071564-960.jpg",
+   "files": [
+    "photo-f23071564-500.jpg",
+    "photo-f23071564-960.jpg"
+   ],
+   "id": "f23071564",
+   "alt": "Straight Razor cropped",
+   "by": "Horst.Burkhardt",
+   "licence": "CC BY-SA 3.0",
+   "licenceUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+   "page": "https://commons.wikimedia.org/wiki/File:Straight_Razor_cropped.jpg",
+   "source": "Wikimedia Commons"
+  }
+ ]
+}

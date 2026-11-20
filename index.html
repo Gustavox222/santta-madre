@@ -1,0 +1,407 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Santta Madre Barbearia | Corte e barba na Vila Ema, São José dos Campos</title>
+<meta name="description" content="Barbearia em São José dos Campos/SP especializada em cortes, barba e curso profissionalizante. Sinuca, cerveja gelada e estacionamento próprio na Vila Ema. Agende pelo Booksy.">
+<meta property="og:type" content="website">
+<meta property="og:locale" content="pt_BR">
+<meta property="og:title" content="Santta Madre Barbearia">
+<meta property="og:description" content="Corte, barba, resenha e cerveja gelada na Vila Ema, em São José dos Campos. Agende pelo Booksy.">
+<meta property="og:image" content="https://gustavox222.github.io/santta-madre/share.jpg">
+<meta property="og:url" content="https://gustavox222.github.io/santta-madre/">
+<link rel="canonical" href="https://gustavox222.github.io/santta-madre/">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="theme-color" content="#0b0a09">
+<link rel="icon" href="img/logo-retrato.jpg" type="image/jpeg">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Anton&family=Caveat+Brush&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+<script>document.documentElement.classList.add('js');</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BarberShop",
+  "name": "Santta Madre Barbearia",
+  "description": "Barbearia em São José dos Campos/SP especializada em cortes, barba e curso profissionalizante!",
+  "image": "img/espaco-cadeiras.jpg",
+  "telephone": "+55 12 98853-7866",
+  "address": { "@type": "PostalAddress", "streetAddress": "R. Madre Paula de São José, 98", "addressLocality": "São José dos Campos", "addressRegion": "SP", "postalCode": "12243-010", "addressCountry": "BR" },
+  "geo": { "@type": "GeoCoordinates", "latitude": -23.2032335, "longitude": -45.8986029 },
+  "openingHoursSpecification": [
+    { "@type": "OpeningHoursSpecification", "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday"], "opens": "09:00", "closes": "21:00" },
+    { "@type": "OpeningHoursSpecification", "dayOfWeek": "Saturday", "opens": "08:00", "closes": "17:00" }
+  ],
+  "aggregateRating": { "@type": "AggregateRating", "ratingValue": "4.8", "reviewCount": "181" },
+  "sameAs": ["https://www.instagram.com/santtamadre.barbearia/", "https://booksy.com/pt-br/45769_santta-madre-barbearia_barbearias_1026706_sao-jose-dos-campos"]
+}
+</script>
+</head>
+<body>
+<!--
+  Santta Madre Barbearia · site de uma página (lugar: barbearia, Vila Ema, São José dos Campos)
+  Paleta: preto e osso da logo + o vermelho das luminárias e da mesa de sinuca do salão.
+  Tipos: Anton (letreiro de barbearia), Manrope (texto), Caveat Brush (o traço de pincel da logo, só em detalhes).
+  Animação: GSAP (entrada do hero, SplitText, faixa que reage à rolagem, revelação da galeria, contadores)
+            + Motion (palavra que gira, botões com mola, botão magnético, listas).
+  Componentes no estilo 21st.dev, reescritos em JS puro: spotlight card, texto que gira, selo circular, marquee de depoimentos.
+  Fontes dos dados: Google Maps (endereço, telefone, horário, notas), Booksy (serviços, preços, equipe), Instagram (bio, desde 2019).
+-->
+<a class="skip" href="#conteudo">Pular para o conteúdo</a>
+
+<header class="nav" data-nav>
+  <div class="wrap nav__in">
+    <a class="nav__logo" href="#topo" aria-label="Santta Madre Barbearia, voltar ao topo">
+      <img src="img/logo-retrato.jpg" alt="" width="44" height="44">
+      <span>Santta Madre</span>
+    </a>
+    <nav class="nav__links" aria-label="Seções">
+      <a href="#servicos">Serviços</a>
+      <a href="#espaco">O espaço</a>
+      <a href="#curso">Curso</a>
+      <a href="#avaliacoes">Avaliações</a>
+      <a href="#visite">Como chegar</a>
+    </nav>
+    <a class="btn btn--primary btn--sm nav__cta" href="https://booksy.com/pt-br/instant-experiences/widget/45769?instant_experiences_enabled=true" target="_blank" rel="noopener" data-booksy>Agendar horário</a>
+    <button class="nav__toggle" type="button" aria-expanded="false" aria-controls="menu" data-menu-toggle>
+      <span class="sr">Abrir menu</span><i></i><i></i>
+    </button>
+  </div>
+  <div class="menu" id="menu" data-menu hidden>
+    <nav class="wrap menu__in" aria-label="Menu">
+      <a href="#servicos">Serviços e preços</a>
+      <a href="#espaco">O espaço</a>
+      <a href="#curso">Curso de barbeiro</a>
+      <a href="#avaliacoes">Avaliações</a>
+      <a href="#visite">Como chegar</a>
+      <a class="btn btn--primary" href="https://booksy.com/pt-br/instant-experiences/widget/45769?instant_experiences_enabled=true" target="_blank" rel="noopener" data-booksy>Agendar horário</a>
+    </nav>
+  </div>
+</header>
+
+<main id="conteudo">
+
+  <!-- HERO -->
+  <section class="hero" id="topo">
+    <div class="pole" aria-hidden="true"></div>
+    <div class="wrap hero__grid">
+      <div class="hero__copy">
+        <p class="eyebrow" data-hero-item>Barbearia na Vila Ema · São José dos Campos</p>
+        <h1 class="hero__title">
+          <span class="hero__line" data-split>Corte, barba</span>
+          <span class="hero__line" data-split>e muita</span>
+          <span class="rotator" data-rotator aria-live="off">
+            <span class="sr">resenha, sinuca e cerveja gelada</span>
+            <span class="rotator__word" aria-hidden="true">resenha.</span>
+          </span>
+        </h1>
+        <p class="hero__bio" data-hero-item>Barbearia em São José dos Campos/SP especializada em cortes, barba e curso profissionalizante!</p>
+        <div class="hero__actions" data-hero-item>
+          <a class="btn btn--primary" href="https://booksy.com/pt-br/instant-experiences/widget/45769?instant_experiences_enabled=true" target="_blank" rel="noopener" data-booksy data-magnetic>Agendar horário</a>
+          <a class="btn btn--ghost" href="#servicos">Ver serviços e preços</a>
+        </div>
+        <ul class="hero__facts" data-hero-item>
+          <li><strong>4,8</strong><span class="stars" aria-hidden="true">★★★★★</span><span>181 avaliações no Google</span></li>
+          <li><strong>5,0</strong><span>353 avaliações no Booksy</span></li>
+          <li><strong>2019</strong><span>ano de abertura</span></li>
+        </ul>
+      </div>
+      <div class="hero__media">
+        <figure class="hero__photo" data-hero-photo>
+          <img src="img/espaco-cadeiras.jpg" width="801" height="801" alt="Salão da Santta Madre: duas cadeiras de barbeiro pretas, espelho largo e luminárias vermelhas" fetchpriority="high">
+        </figure>
+        <p class="status" data-status><span class="status__dot"></span><span data-status-text>Seg a sex, 9h às 21h</span></p>
+        <div class="seal" aria-hidden="true">
+          <svg viewBox="0 0 120 120">
+            <defs><path id="seal-circle" d="M60,60 m-46,0 a46,46 0 1,1 92,0 a46,46 0 1,1 -92,0"/></defs>
+            <text><textPath href="#seal-circle" textLength="286" lengthAdjust="spacing">SANTTA MADRE · BARBEARIA · DESDE 2019 ·</textPath></text>
+          </svg>
+          <span class="seal__mark">✂</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAIXA -->
+  <div class="band" aria-hidden="true">
+    <div class="band__track" data-marquee>
+      <span>Corte</span><b>✂</b><span>Degradê</span><b>✂</b><span>Barba</span><b>✂</b><span>Selagem</span><b>✂</b><span>Sinuca</span><b>✂</b><span>Cerveja gelada</span><b>✂</b><span>Shiatsu</span><b>✂</b><span>Curso de barbeiro</span><b>✂</b>
+      <span>Corte</span><b>✂</b><span>Degradê</span><b>✂</b><span>Barba</span><b>✂</b><span>Selagem</span><b>✂</b><span>Sinuca</span><b>✂</b><span>Cerveja gelada</span><b>✂</b><span>Shiatsu</span><b>✂</b><span>Curso de barbeiro</span><b>✂</b>
+    </div>
+  </div>
+
+  <!-- SERVIÇOS -->
+  <section class="sec sec--bone" id="servicos" aria-labelledby="servicos-h">
+    <div class="wrap services">
+      <div class="services__head">
+        <p class="kicker">Tabela do Booksy</p>
+        <h2 id="servicos-h">Serviços e preços</h2>
+        <p class="lead">Na cadeira, <strong>Mateus</strong> e <strong>Paulo</strong>. Na massagem, a <strong>Patricia</strong>. O valor muda um pouquinho de um barbeiro para o outro, por isso alguns aparecem em faixa.</p>
+        <a class="btn btn--primary" href="https://booksy.com/pt-br/instant-experiences/widget/45769?instant_experiences_enabled=true" target="_blank" rel="noopener" data-booksy>Agendar pelo Booksy</a>
+        <figure class="services__photo">
+          <img src="img/lavatorio.jpg" width="1026" height="1368" loading="lazy" alt="Lavatório preto da barbearia ao lado de uma cadeira reclinável e do lounge">
+        </figure>
+      </div>
+
+      <div class="services__grid">
+        <article class="card" data-spotlight>
+          <header class="card__head"><span class="card__num">01</span><h3>Cabelo</h3></header>
+          <ul class="price">
+            <li><span class="price__name">Corte máquina</span><span class="price__time">30 min</span><span class="price__val">R$ 40</span></li>
+            <li><span class="price__name">Corte na tesoura ou degradê</span><span class="price__time">30 min</span><span class="price__val">R$ 65–70</span></li>
+            <li><span class="price__name">Pezinho</span><span class="price__time">10 min</span><span class="price__val">R$ 20</span></li>
+            <li><span class="price__name">Selagem</span><span class="price__time">40 min</span><span class="price__val">a partir de R$ 60</span></li>
+            <li><span class="price__name">Hidratação capilar</span><span class="price__time">10 min</span><span class="price__val">R$ 30</span></li>
+          </ul>
+        </article>
+
+        <article class="card" data-spotlight>
+          <header class="card__head"><span class="card__num">02</span><h3>Barba e combos</h3></header>
+          <ul class="price">
+            <li><span class="price__name">Barba</span><span class="price__time">30 min</span><span class="price__val">R$ 65–70</span></li>
+            <li><span class="price__name">Corte máquina + barba</span><span class="price__time">60 min</span><span class="price__val">R$ 105–110</span></li>
+            <li><span class="price__name">Tesoura ou degradê + barba</span><span class="price__time">60 min</span><span class="price__val">R$ 130–140</span></li>
+          </ul>
+          <p class="card__note">Combo é o jeito de sair com tudo alinhado numa hora só.</p>
+        </article>
+
+        <article class="card" data-spotlight>
+          <header class="card__head"><span class="card__num">03</span><h3>Acabamento</h3></header>
+          <ul class="price">
+            <li><span class="price__name">Sobrancelha na lâmina</span><span class="price__time">5 min</span><span class="price__val">R$ 15</span></li>
+            <li><span class="price__name">Nariz ou orelha na cera quente</span><span class="price__time">5 min</span><span class="price__val">R$ 20</span></li>
+            <li><span class="price__name">Nariz + orelha na cera quente</span><span class="price__time">10 min</span><span class="price__val">R$ 30</span></li>
+          </ul>
+        </article>
+
+        <article class="card" data-spotlight>
+          <header class="card__head"><span class="card__num">04</span><h3>Massagem com a Patricia</h3></header>
+          <ul class="price">
+            <li><span class="price__name">Shiatsu desportivo</span><span class="price__time">60 min</span><span class="price__val">R$ 200</span></li>
+            <li><span class="price__name">Relaxante com shiatsu</span><span class="price__time">60 min</span><span class="price__val">R$ 200</span></li>
+            <li><span class="price__name">Shiatsu Sensitive, para ansiedade</span><span class="price__time">60 min</span><span class="price__val">R$ 250</span></li>
+            <li><span class="price__name">SpaDay, relaxamento profundo</span><span class="price__time">90 min</span><span class="price__val">R$ 300</span></li>
+          </ul>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- O ESPAÇO -->
+  <section class="sec sec--dark" id="espaco" aria-labelledby="espaco-h">
+    <div class="wrap">
+      <div class="sec__head">
+        <h2 id="espaco-h">Chegou cedo? <span class="brush">Tem sinuca.</span></h2>
+        <p class="lead">Mesa de sinuca, bar de cerveja gelada, lounge de sofá capitonê e estacionamento próprio na porta. Barbearia boa é aquela em que dá vontade de ficar mais um pouco.</p>
+      </div>
+      <div class="bento" data-gallery>
+        <figure class="bento__item bento__item--tall"><img src="img/salao.jpg" width="1200" height="1600" loading="lazy" alt="Salão com paredes vermelhas, cadeiras de barbeiro e luminárias vermelhas"></figure>
+        <figure class="bento__item bento__item--wide"><img src="img/sinuca.jpg" width="1600" height="900" loading="lazy" alt="Mesa de sinuca de feltro vermelho com o bar de bebidas ao fundo"></figure>
+        <figure class="bento__item"><img src="img/bar-cervejas.jpg" width="1600" height="1129" loading="lazy" alt="Bar com prateleiras de cervejas e destilados e uma geladeira vermelha"></figure>
+        <figure class="bento__item"><img src="img/lounge.jpg" width="1600" height="1023" loading="lazy" alt="Lounge com sofá capitonê amarelo e paredes grafitadas"></figure>
+        <ul class="perks">
+          <li><span class="perks__ic"><svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M7 3h6.5a5.5 5.5 0 0 1 0 11H10v7H7V3Zm3 3v5h3.5a2.5 2.5 0 0 0 0-5H10Z"/></svg></span>Estacionamento próprio</li>
+          <li><span class="perks__ic"><svg viewBox="0 0 24 24" aria-hidden="true"><path fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" d="M2.5 9a14 14 0 0 1 19 0M5.8 12.5a9 9 0 0 1 12.4 0M9.2 16a4 4 0 0 1 5.6 0"/><circle cx="12" cy="19.5" r="1.6" fill="currentColor"/></svg></span>Wi-Fi liberado</li>
+          <li><span class="perks__ic"><svg viewBox="0 0 24 24" aria-hidden="true"><g fill="currentColor"><ellipse cx="6" cy="10" rx="2.2" ry="2.8"/><ellipse cx="10" cy="5.8" rx="2.2" ry="2.8"/><ellipse cx="14.2" cy="5.8" rx="2.2" ry="2.8"/><ellipse cx="18.2" cy="10" rx="2.2" ry="2.8"/><path d="M12 11c-3 0-6.5 4.5-6.5 7.2 0 1.8 1.4 2.8 3 2.8 1.4 0 2.2-.8 3.5-.8s2.1.8 3.5.8c1.6 0 3-1 3-2.8C18.5 15.5 15 11 12 11Z"/></g></svg></span>Pet é bem-vindo</li>
+          <li><span class="perks__ic"><svg viewBox="0 0 24 24" aria-hidden="true"><path fill="none" stroke="currentColor" stroke-width="2" d="M3 6.5h18v11H3z"/><path fill="currentColor" d="M3 9h18v2.5H3zM6 14h5v1.6H6z"/></svg></span>Aceita cartão de crédito</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- CURSO -->
+  <section class="sec sec--red" id="curso" aria-labelledby="curso-h">
+    <div class="wrap split">
+      <div class="split__copy">
+        <p class="kicker kicker--light">Para quem quer viver disso</p>
+        <h2 id="curso-h">Curso profissionalizante de barbeiro</h2>
+        <p class="lead">A Santta Madre também ensina o ofício. Quem quer trabalhar com tesoura, máquina e navalha aprende dentro de uma barbearia que funciona de segunda a sábado.</p>
+        <p class="lead">Datas das turmas, carga horária e valores: chama no WhatsApp que a gente explica tudo.</p>
+        <div class="split__actions">
+          <a class="btn btn--light" href="https://wa.me/5512988537866?text=Ol%C3%A1%2C%20Santta%20Madre!%20Quero%20saber%20do%20curso%20profissionalizante%20de%20barbeiro." target="_blank" rel="noopener" data-magnetic>Perguntar sobre o curso</a>
+          <a class="link link--light" href="https://www.instagram.com/santtamadre.barbearia/" target="_blank" rel="noopener">Ver o dia a dia no Instagram</a>
+        </div>
+      </div>
+      <figure class="split__photo">
+        <img src="img/stock/photo-f180596011.jpg" srcset="img/stock/photo-f180596011-500.jpg 500w, img/stock/photo-f180596011-960.jpg 960w, img/stock/photo-f180596011.jpg 1280w" sizes="(max-width: 900px) 100vw, 50vw" width="1280" height="853" loading="lazy" decoding="async" alt="Ferramentas clássicas de barbeiro: navalhas, tesoura de desbaste e máquinas manuais" data-source="stand-in" data-subject="stand-in">
+      </figure>
+    </div>
+  </section>
+
+  <!-- AVALIAÇÕES -->
+  <section class="sec sec--bone" id="avaliacoes" aria-labelledby="avaliacoes-h">
+    <div class="wrap">
+      <div class="sec__head">
+        <h2 id="avaliacoes-h">4,8 no Google, 5,0 no Booksy</h2>
+        <p class="lead">São 181 avaliações no Google e 353 no Booksy. Separamos algumas do jeito que a clientela escreveu.</p>
+      </div>
+      <div class="reviews">
+        <div class="score" data-score>
+          <div class="score__top">
+            <span class="score__num" data-count="4.8">4,8</span>
+            <div>
+              <span class="stars stars--big" aria-hidden="true">★★★★★</span>
+              <p>181 avaliações no Google</p>
+            </div>
+          </div>
+          <ul class="bars" aria-label="Distribuição das notas no Google">
+            <li><span>5</span><i style="--v:.889"></i><em>161</em></li>
+            <li><span>4</span><i style="--v:.077"></i><em>14</em></li>
+            <li><span>3</span><i style="--v:.022"></i><em>4</em></li>
+            <li><span>2</span><i style="--v:.006"></i><em>1</em></li>
+            <li><span>1</span><i style="--v:.006"></i><em>1</em></li>
+          </ul>
+          <div class="score__booksy">
+            <img src="img/icons/booksy.png" width="24" height="24" alt="">
+            <p><strong>5,0</strong> em 353 avaliações no Booksy</p>
+          </div>
+          <a class="btn btn--dark" href="https://www.google.com/maps/place/Santta+Madre+Barbearia/@-23.2032335,-45.8986029,17z/data=!4m8!3m7!1s0x94cc4b77c99209cf:0xe8c577153164e644!8m2!3d-23.2032335!4d-45.8986029!9m1!1b1!16s%2Fg%2F11h60f7xnl" target="_blank" rel="noopener">Ler todas no Google</a>
+        </div>
+
+        <div class="quotes" data-quotes>
+          <div class="quotes__track" data-quotes-track>
+            <blockquote class="quote"><p>Sempre muito bem atendido. Já sou cliente a mais de 7 anos. Ambiente acolhedor.</p><footer><b>Alcionei P.</b><span>Google · 5 estrelas</span></footer></blockquote>
+            <blockquote class="quote"><p>Ótimo ambiente interno, com mesa de sinuca além de ter estacionamento próprio.</p><footer><b>Destaque das avaliações</b><span>Google</span></footer></blockquote>
+            <blockquote class="quote"><p>Lugar top, ótimo atendimento e excelentes profissionais.</p><footer><b>Destaque das avaliações</b><span>Google</span></footer></blockquote>
+            <blockquote class="quote"><p>Recomendo o local pela estrutura, preço e atenção ao cliente.</p><footer><b>Destaque das avaliações</b><span>Google</span></footer></blockquote>
+            <blockquote class="quote"><p>Excelente; como de praxe!!!!</p><footer><b>Wagner E.</b><span>Booksy · corte máquina com o Mateus</span></footer></blockquote>
+          </div>
+          <button class="quotes__pause" type="button" aria-pressed="false" data-quotes-pause>Pausar depoimentos</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- VISITE -->
+  <section class="sec sec--dark" id="visite" aria-labelledby="visite-h">
+    <div class="wrap">
+      <h2 id="visite-h" class="sr-h2">Como chegar na Santta Madre</h2>
+      <p class="address" data-split-lines>R. Madre Paula de São José, 98</p>
+      <p class="address__sub">Vila Ema · São José dos Campos – SP · <span class="brush brush--sm">estacionamento próprio</span></p>
+
+      <div class="visit">
+        <div class="visit__info">
+          <div class="hours">
+            <h3>Horário de funcionamento</h3>
+            <ul data-hours>
+              <li data-day="1"><span>Segunda</span><span>9h às 21h</span></li>
+              <li data-day="2"><span>Terça</span><span>9h às 21h</span></li>
+              <li data-day="3"><span>Quarta</span><span>9h às 21h</span></li>
+              <li data-day="4"><span>Quinta</span><span>9h às 21h</span></li>
+              <li data-day="5"><span>Sexta</span><span>9h às 21h</span></li>
+              <li data-day="6"><span>Sábado</span><span>8h às 17h</span></li>
+              <li data-day="0"><span>Domingo</span><span>Fechado</span></li>
+            </ul>
+            <p class="hours__note">Horário do Google Maps. Em feriado pode mudar.</p>
+          </div>
+
+          <div class="contact">
+            <h3>Contato</h3>
+            <a class="contact__row" href="tel:+5512988537866">
+              <svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M6.6 10.8a15.1 15.1 0 0 0 6.6 6.6l2.2-2.2c.3-.3.7-.4 1-.2 1.1.4 2.3.6 3.6.6.6 0 1 .4 1 1V20c0 .6-.4 1-1 1A17 17 0 0 1 3 4c0-.6.4-1 1-1h3.5c.6 0 1 .4 1 1 0 1.3.2 2.5.6 3.6.1.3 0 .7-.2 1l-2.3 2.2Z"/></svg>
+              <span>(12) 98853-7866</span>
+            </a>
+            <a class="contact__row" href="https://wa.me/5512988537866?text=Ol%C3%A1%2C%20Santta%20Madre!" target="_blank" rel="noopener">
+              <svg class="ic ic--wa" viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/></svg>
+              <span>Chamar no WhatsApp</span>
+            </a>
+            <div class="visit__actions">
+              <a class="btn btn--primary" href="https://www.google.com/maps/dir/?api=1&amp;destination=Santta%20Madre%20Barbearia%2C%20R.%20Madre%20Paula%20de%20S%C3%A3o%20Jos%C3%A9%2C%2098%20-%20Vila%20Ema%2C%20S%C3%A3o%20Jos%C3%A9%20dos%20Campos%20-%20SP" target="_blank" rel="noopener">Traçar rota</a>
+              <button class="btn btn--ghost" type="button" data-copy="R. Madre Paula de São José, 98 - Vila Ema, São José dos Campos - SP, 12243-010">Copiar endereço</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="visit__map">
+          <iframe src="https://maps.google.com/maps?q=Santta%20Madre%20Barbearia%2C%20R.%20Madre%20Paula%20de%20S%C3%A3o%20Jos%C3%A9%2C%2098%2C%20Vila%20Ema%2C%20S%C3%A3o%20Jos%C3%A9%20dos%20Campos&amp;z=16&amp;hl=pt-BR&amp;output=embed" title="Mapa do Google: Santta Madre Barbearia na R. Madre Paula de São José, 98, Vila Ema" loading="lazy" referrerpolicy="no-referrer-when-downgrade" allowfullscreen></iframe>
+        </div>
+      </div>
+
+      <div class="visit__row">
+        <figure class="visit__photo"><img src="img/fachada.jpg" width="1200" height="1600" loading="lazy" alt="Fachada preta da Santta Madre com o letreiro, escada de entrada e o estacionamento na frente"></figure>
+        <figure class="visit__photo visit__photo--wide"><img src="img/rua.jpg" width="1600" height="900" loading="lazy" alt="A barbearia vista da rua Madre Paula de São José, com o letreiro preto e branco"></figure>
+        <div class="social">
+          <h3>Siga e marque a gente</h3>
+          <a class="social__item" href="https://www.instagram.com/santtamadre.barbearia/" target="_blank" rel="noopener">
+            <span class="social__ic social__ic--ig"><svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M7.0301.084c-1.2768.0602-2.1487.264-2.911.5634-.7888.3075-1.4575.72-2.1228 1.3877-.6652.6677-1.075 1.3368-1.3802 2.127-.2954.7638-.4956 1.6365-.552 2.914-.0564 1.2775-.0689 1.6882-.0626 4.947.0062 3.2586.0206 3.6671.0825 4.9473.061 1.2765.264 2.1482.5635 2.9107.308.7889.72 1.4573 1.388 2.1228.6679.6655 1.3365 1.0743 2.1285 1.38.7632.295 1.6361.4961 2.9134.552 1.2773.056 1.6884.069 4.9462.0627 3.2578-.0062 3.668-.0207 4.9478-.0814 1.28-.0607 2.147-.2652 2.9098-.5633.7889-.3086 1.4578-.72 2.1228-1.3881.665-.6682 1.0745-1.3378 1.3795-2.1284.2957-.7632.4966-1.636.552-2.9124.056-1.2809.0692-1.6898.063-4.948-.0063-3.2583-.021-3.6668-.0817-4.9465-.0607-1.2797-.264-2.1487-.5633-2.9117-.3084-.7889-.72-1.4568-1.3876-2.1228C21.2982 1.33 20.628.9208 19.8378.6165 19.074.321 18.2017.1197 16.9244.0645 15.6471.0093 15.236-.005 11.977.0014 8.718.0076 8.31.0215 7.0301.0839m.1402 21.6932c-1.17-.0509-1.8053-.2453-2.2287-.408-.5606-.216-.96-.4771-1.3819-.895-.422-.4178-.6811-.8186-.9-1.378-.1644-.4234-.3624-1.058-.4171-2.228-.0595-1.2645-.072-1.6442-.079-4.848-.007-3.2037.0053-3.583.0607-4.848.05-1.169.2456-1.805.408-2.2282.216-.5613.4762-.96.895-1.3816.4188-.4217.8184-.6814 1.3783-.9003.423-.1651 1.0575-.3614 2.227-.4171 1.2655-.06 1.6447-.072 4.848-.079 3.2033-.007 3.5835.005 4.8495.0608 1.169.0508 1.8053.2445 2.228.408.5608.216.96.4754 1.3816.895.4217.4194.6816.8176.9005 1.3787.1653.4217.3617 1.056.4169 2.2263.0602 1.2655.0739 1.645.0796 4.848.0058 3.203-.0055 3.5834-.061 4.848-.051 1.17-.245 1.8055-.408 2.2294-.216.5604-.4763.96-.8954 1.3814-.419.4215-.8181.6811-1.3783.9-.4224.1649-1.0577.3617-2.2262.4174-1.2656.0595-1.6448.072-4.8493.079-3.2045.007-3.5825-.006-4.848-.0608M16.953 5.5864A1.44 1.44 0 1 0 18.39 4.144a1.44 1.44 0 0 0-1.437 1.4424M5.8385 12.012c.0067 3.4032 2.7706 6.1557 6.173 6.1493 3.4026-.0065 6.157-2.7701 6.1506-6.1733-.0065-3.4032-2.771-6.1565-6.174-6.1498-3.403.0067-6.156 2.771-6.1496 6.1738M8 12.0077a4 4 0 1 1 4.008 3.9921A3.9996 3.9996 0 0 1 8 12.0077"/></svg></span>
+            <span><b>Instagram</b><small>@santtamadre.barbearia</small></span>
+          </a>
+          <a class="social__item" href="https://booksy.com/pt-br/45769_santta-madre-barbearia_barbearias_1026706_sao-jose-dos-campos" target="_blank" rel="noopener">
+            <span class="social__ic social__ic--img"><img src="img/icons/booksy.png" width="24" height="24" alt=""></span>
+            <span><b>Booksy</b><small>agenda e avaliações</small></span>
+          </a>
+          <a class="social__item" href="https://www.google.com/maps/place/Santta+Madre+Barbearia/@-23.2032335,-45.8986029,17z/data=!3m1!4b1!4m6!3m5!1s0x94cc4b77c99209cf:0xe8c577153164e644!8m2!3d-23.2032335!4d-45.8986029!16s%2Fg%2F11h60f7xnl" target="_blank" rel="noopener">
+            <span class="social__ic social__ic--maps"><svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M19.527 4.799c1.212 2.608.937 5.678-.405 8.173-1.101 2.047-2.744 3.74-4.098 5.614-.619.858-1.244 1.75-1.669 2.727-.141.325-.263.658-.383.992-.121.333-.224.673-.34 1.008-.109.314-.236.684-.627.687h-.007c-.466-.001-.579-.53-.695-.887-.284-.874-.581-1.713-1.019-2.525-.51-.944-1.145-1.817-1.79-2.671L19.527 4.799zM8.545 7.705l-3.959 4.707c.724 1.54 1.821 2.863 2.871 4.18.247.31.494.622.737.936l4.984-5.925-.029.01c-1.741.601-3.691-.291-4.392-1.987a3.377 3.377 0 0 1-.209-.716c-.063-.437-.077-.761-.004-1.198l.001-.007zM5.492 3.149l-.003.004c-1.947 2.466-2.281 5.88-1.117 8.77l4.785-5.689-.058-.05-3.607-3.035zM14.661.436l-3.838 4.563a.295.295 0 0 1 .027-.01c1.6-.551 3.403.15 4.22 1.626.176.319.323.683.377 1.045.068.446.085.773.012 1.22l-.003.016 3.836-4.561A8.382 8.382 0 0 0 14.67.439l-.009-.003zM9.466 5.868L14.162.285l-.047-.012A8.31 8.31 0 0 0 11.986 0a8.439 8.439 0 0 0-6.169 2.766l-.016.018 3.665 3.084z"/></svg></span>
+            <span><b>Google Maps</b><small>rota e avaliações</small></span>
+          </a>
+          <a class="social__item" href="https://wa.me/5512988537866?text=Ol%C3%A1%2C%20Santta%20Madre!" target="_blank" rel="noopener">
+            <span class="social__ic social__ic--wa"><svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/></svg></span>
+            <span><b>WhatsApp</b><small>(12) 98853-7866</small></span>
+          </a>
+          <!-- Facebook: não encontramos página oficial. Quando houver, copie um .social__item acima com o link e o ícone do Facebook. -->
+        </div>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="foot">
+  <div class="wrap foot__grid">
+    <div class="foot__brand">
+      <img src="img/logo-retrato.jpg" width="120" height="120" alt="Logo da Santta Madre Barbearia">
+      <p>Barbearia em São José dos Campos/SP especializada em cortes, barba e curso profissionalizante!</p>
+    </div>
+    <div class="foot__col">
+      <h3>Navegue</h3>
+      <a href="#servicos">Serviços e preços</a>
+      <a href="#espaco">O espaço</a>
+      <a href="#curso">Curso de barbeiro</a>
+      <a href="#avaliacoes">Avaliações</a>
+    </div>
+    <div class="foot__col">
+      <h3>Visite</h3>
+      <a href="#visite">R. Madre Paula de São José, 98<br>Vila Ema, São José dos Campos</a>
+      <a href="tel:+5512988537866">(12) 98853-7866</a>
+      <span>Seg a sex 9h–21h · Sáb 8h–17h</span>
+    </div>
+    <div class="foot__col">
+      <h3>Redes</h3>
+      <a href="https://www.instagram.com/santtamadre.barbearia/" target="_blank" rel="noopener">Instagram</a>
+      <a href="https://booksy.com/pt-br/45769_santta-madre-barbearia_barbearias_1026706_sao-jose-dos-campos" target="_blank" rel="noopener">Booksy</a>
+      <a href="https://wa.me/5512988537866" target="_blank" rel="noopener">WhatsApp</a>
+      <a href="https://www.google.com/maps/place/Santta+Madre+Barbearia/@-23.2032335,-45.8986029,17z/data=!3m1!4b1!4m6!3m5!1s0x94cc4b77c99209cf:0xe8c577153164e644!8m2!3d-23.2032335!4d-45.8986029!16s%2Fg%2F11h60f7xnl" target="_blank" rel="noopener">Google Maps</a>
+    </div>
+  </div>
+  <div class="wrap foot__base">
+    <p>© <span data-year>2026</span> Santta Madre Barbearia</p>
+    <p class="foot__credit">Fotos: Santta Madre e Google Maps · Ferramentas: “Barber tools - Macedonian barber craft”, Orce Wiki, CC BY-SA 4.0, Wikimedia Commons</p>
+  </div>
+</footer>
+
+<nav class="actionbar" aria-label="Ações rápidas">
+  <a class="btn btn--primary" href="https://booksy.com/pt-br/instant-experiences/widget/45769?instant_experiences_enabled=true" target="_blank" rel="noopener" data-booksy>Agendar horário</a>
+  <a class="actionbar__wa" href="https://wa.me/5512988537866?text=Ol%C3%A1%2C%20Santta%20Madre!" target="_blank" rel="noopener" aria-label="Chamar no WhatsApp">
+    <svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/></svg>
+  </a>
+</nav>
+
+<!-- Agendamento: Booksy dentro do site, com saída para nova aba -->
+<dialog class="booking" data-booking aria-labelledby="booking-h">
+  <div class="booking__bar">
+    <h2 id="booking-h">Agendar na Santta Madre</h2>
+    <a class="link" href="https://booksy.com/pt-br/instant-experiences/widget/45769?instant_experiences_enabled=true" target="_blank" rel="noopener">Abrir no Booksy</a>
+    <button class="booking__close" type="button" data-booking-close aria-label="Fechar agendamento">×</button>
+  </div>
+  <iframe title="Agendamento Booksy da Santta Madre Barbearia" data-src="https://booksy.com/pt-br/instant-experiences/widget/45769?instant_experiences_enabled=true" allow="payment"></iframe>
+</dialog>
+
+<script src="vendor/gsap.min.js"></script>
+<script src="vendor/ScrollTrigger.min.js"></script>
+<script src="vendor/SplitText.min.js"></script>
+<script src="vendor/motion.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>
