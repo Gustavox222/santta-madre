@@ -276,6 +276,7 @@ html.menu-open .nav { background: var(--black); border-color: var(--line); }
 .social__ic--ig { background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285aeb 90%); }
 .social__ic--maps { background: #fff; color: #34a853; }
 .social__ic--wa { background: #25d366; }
+.social__ic--fb { background: #0866ff; }
 .social__ic--img { background: #fff; }
 
 /* ---------- Rodapé ---------- */
